@@ -1,0 +1,3 @@
+Document: Supporting document describing how to compile and run code – Nick Schuler
+
+For this code, you will need to open the files as a project in your IDE, and also import the jar file for Junit 5 standalone to run the tester. After that, depending on your IDE of choice, you must run and execute the tests through Junit inside of your IDE, where they will all pass due to the calculator being properly coded.
