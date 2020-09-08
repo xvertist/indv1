@@ -4,7 +4,7 @@ Public static int prec(char refOp) – Designing this method was fairly easy, ut
 
 Private static Boolean isOperator(char c) – This returns true if the char provided matches one of the four operators that are used in this calculator
 
-Private void doOperation(Stack\&lt;Double\&gt; numStack, Stack\&lt;Character\&gt; opStack) – This is where all of the math logic lies. Operations are sent here after they have been parsed in the main portion of the calculate method
+Private void doOperation(Stack<Double> numStack, Stack<Character> opStack) – This is where all of the math logic lies. Operations are sent here after they have been parsed in the main portion of the calculate method
 
 Public String calculate (String expression) – this is implemented from SimpleCalculator class. This method first checks the string provided for errors, such as entering nothing, a blank space at the beginning or letters, and will return &quot;Invalid Expression&quot; if an error is found. Then the calculator parses through the string character by character, sending the info to the correct stacks to be processed in doOperation. There is also error checking within the parsing logic, that will return &quot;Invalid Expression&quot; if any errors are found. There is also a decimal formatter that rounds to 5 decimal places in both the parsing and at the end before returning the final answer.
 
